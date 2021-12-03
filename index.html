@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+
+<link rel = "stylesheet" href = "styles.css">
+
+</head>
+
+<body>
+
+<div class = "container-fluid">
+<div id = "navbar" class = "row mb-5">
+  <div class = "col-md-4"><h1>Type Cast</h1></div>
+    
+  <div class = "col-md-2"><h2> A type scale generator</h2></div>
+</div>
+<hr>
+
+<div class = "row mb-5">
+<div class = "col-md-4" id = "form">
+<form>
+  <label for="body-text">Body Text Size - px</label><br>
+  <input class = "form-control" type="text" id="body-text" value = "16"><br>
+  <label for="ratio">Ratio:</label><br>
+  <select class = "form-control" id="ratio">
+    <option value = "1.067">Minor Second: 1.067</option>
+    <option value = "1.125">Major Second: 1.125</option>
+    <option value = "1.2">Minor Third: 1.2</option>
+    <option selected value = "1.25">Major Third: 1.25</option>
+    <option value = "1.333">Perfect Fourth: 1.333</option>
+  </select><br>
+  <label for = "levels">Number of Levels</label><br>
+  <select class = "form-control" id = "levels">
+    <option value = "3">3</option>
+    <option value = "4">4</option>
+    <option value = "5" >5</option>
+    <option value = "6">6</option>
+    <option value = "7" selected>7</option>
+    <option value = "8">8</option>
+    <option value = "9">9</option>
+    <option value = "10">10</option>
+  </select><br>
+  <label for = "sample-text">Sample Text</label><br>
+  <input class = "form-control" type = "text" id = "sample-text" value = "The Quick Brown Fox Jumped over the Lazy Dog"><br>
+  <label for = "font-type">Choose a Font</label><br>
+  <select class = "form-control" type = "dropdown" id = "font-type"></select>
+  <button class = "btn btn-primary" onclick = 'generate_type(); return false;'>Generate Type</button>
+</form>
+</div>
+
+<div class = "col-md-8" id = "type-scales"></div>
+</div>
+
+<footer>
+  <div class = "row">
+    <div class = "col-md-4"><p>By <a href = "https://csdiehl.github.io/">Caleb Diehl</a></p>
+    <p>Inspired by <a href = "https://type-scale.com/" target = "_blank">Type Scale</a></p>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script src = "App.js"></script>
+
+
+</body>
+
+</html>
